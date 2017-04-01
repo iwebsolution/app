@@ -1,8 +1,8 @@
 var bodyParser = require('body-parser');
 var plivo = require('plivo');
 var api = plivo.RestAPI({
-    authId: 'MAZWFKNTEXNJJJNMNKOT',
-    authToken: 'YzQ3YjlmMTliZWJlYjQxN2QwYjQzYzBlNjZhNjli',
+    authId: 'XXX',
+    authToken: 'XXX',
 });
 
 
