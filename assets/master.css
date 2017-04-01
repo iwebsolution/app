@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+body {
+
+}
+h1 {
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-bottom: 60px;
+}
+#output {
+  height: 500px;
+  width: 100%;
+  overflow: auto;
+  background: #ccc;
+  margin-top: 20px;
+}
+.output {
+  margin: 0;
+  padding: 0;
+}
+.consola {
+  margin-top: 50px;
+  margin-left: 0;
+  padding-left: 0;
+}
+#output p:first-child {
+  margin-top: 20px;
+}
+
+.valid {
+  color: green;
+}
+.invalid {
+  color: red;
+}
+.normal {
+  color: black;
+}

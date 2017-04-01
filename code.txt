@@ -1,0 +1,73 @@
+setInterval(function() {
+    client.calls(currentCall).get(function(err, call) {
+        var callStatus = call.status;
+        if (callStatus === 'ringing') {
+            console.log('Suna');
+
+        } else if (callStatus === 'busy') {
+
+        };
+    });
+}), 5000;
+// check calls
+
+
+
+client.calls(callSid).update({
+    status: "completed"
+}, function(err, call) {
+    console.log(call.direction);
+});
+
+
+//SPLIT STRINGS
+
+var arr = STRING-NAME.split(",");
+for(var i=0;i<arr.length;i++) {
+  console.log(arr[i] = ++arr[i]);
+}
+
+//app2 nexmo
+applicationId: 'b40e2807-6439-430a-b42c-35a14d28809b',
+privateKey: './private.key'
+
+
+nexmo app:create app2 --keyfile private2.key http://example.com http://example.com
+
+
+
+
+if (callStatus == 'busy' && appStatus === "on") {
+    callAgain(to, fromNumber, "http://46.101.133.131/update-busy");
+    updateDataBase(to, callSid, callStatus);
+} else if (callStatus == "no-answer" && appStatus === "on") {
+    // autoStop += 1;
+    // if (autoStop === 3) {
+    //     appStatus = "off";
+    // };
+    setTimeout(function() {
+        callAgain(to, fromNumber, "http://46.101.133.131/update-busy");
+        updateDataBase(to, callSid, callStatus);
+    }, 1000);
+    //end setTimeout
+} else if (callStatus == "completed" && appStatus === "on") {
+    callAgain(to, fromNumber, "http://46.101.133.131/update-busy");
+} else if (callStatus == "failed" && appStatus === "on") {
+    callAgain(to, fromNumber, "http://46.101.133.131/update-busy");
+    updateDataBase(to, callSid, callStatus);
+}; // end if
+
+
+
+/// randnom value from array
+var rand = myArray[Math.floor(Math.random() * myArray.length)];
+
+
+
+
+// iterate threw object if it has a key
+for (var key in data) {
+if (data.hasOwnProperty(key)) {
+console.log(key + " -> " + data[key]);
+}
+};
